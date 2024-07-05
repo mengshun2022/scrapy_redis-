@@ -20,10 +20,10 @@ class TengxunzhaopinItemToPG:
 
     def __init__(self):
         self.conn = psycopg2.connect(
-            database="flask",
+            database="spiders",
             user="postgres",
             password="123456",
-            host="192.168.200.19",
+            host="127.0.0.1",
             port="5432",
         )
         self.cur = self.conn.cursor()
